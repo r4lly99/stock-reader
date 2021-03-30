@@ -1,0 +1,6 @@
+applicationType: messaging
+defaultPackage: stock.reader
+testFramework: junit
+sourceLanguage: java
+buildTool: gradle
+features: [app-name, gradle, java, java-application, junit, kafka, logback, readme, shade, yaml]
