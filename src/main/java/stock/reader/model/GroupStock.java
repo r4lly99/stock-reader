@@ -2,19 +2,22 @@ package stock.reader.model;
 
 import java.time.LocalDateTime;
 
-public class Stock {
+public class GroupStock {
 
     private LocalDateTime time;
     private String code;
-    private int price;
+    private int high;
+    private int low;
 
-    public Stock() {
+    public GroupStock() {
     }
 
-    public Stock(LocalDateTime time, String code, int price) {
+
+    public GroupStock(LocalDateTime time, String code, int high, int low) {
         this.time = time;
         this.code = code;
-        this.price = price;
+        this.high = high;
+        this.low = low;
     }
 
     public LocalDateTime getTime() {
@@ -33,20 +36,29 @@ public class Stock {
         this.code = code;
     }
 
-    public int getPrice() {
-        return price;
+    public int getHigh() {
+        return high;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setHigh(int high) {
+        this.high = high;
+    }
+
+    public int getLow() {
+        return low;
+    }
+
+    public void setLow(int low) {
+        this.low = low;
     }
 
     @Override
     public String toString() {
-        return "Stock{" +
+        return "GroupStock{" +
                 "time=" + time +
                 ", code='" + code + '\'' +
-                ", price=" + price +
+                ", high=" + high +
+                ", low=" + low +
                 '}';
     }
 }
