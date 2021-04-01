@@ -4,7 +4,7 @@ Simple service to consume message broker from `broadcast` service.
 
 ## Description
 
-For coding pretest Backend Developer at Bibit
+For coding pretest Backend Developer 
 
 ## Getting Started
 
